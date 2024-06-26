@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+        android:name="com.custom.apidemo.MainApp"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Custom_api_demo"
+        tools:targetApi="31">
+
+    <activity
+        android:name=".MainActivity"
+        android:exported="true"
+        android:label="@string/app_name">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+
+    <!-- execSuCmd -->
+    <activity
+        android:name="com.custom.apidemo.ExecSuCmdSettings">
+    </activity>
+
+    <!-- LedSet -->
+    <activity
+        android:name="com.custom.apidemo.LedSettings">
+    </activity>
+
+    <!-- FanSet -->
+    <activity
+        android:name="com.custom.apidemo.FanSettings">
+    </activity>
+
+    <!-- WolSet -->
+    <activity
+        android:name="com.custom.apidemo.WolSettings" >
+    </activity>
+
+    <!-- SetTime -->
+    <activity
+        android:name="com.custom.apidemo.SetTimeSettings" >
+    </activity>
+
+    <!-- silentInstall -->
+    <activity
+        android:name="com.custom.apidemo.SilentInstallSettings" >
+    </activity>
+
+    <!-- Gpio -->
+    <activity
+        android:name="com.custom.apidemo.GpioSettings" >
+    </activity>
+
+    <!-- SystemProperties -->
+    <activity
+        android:name="com.custom.apidemo.SystemPropertiesSettings" >
+    </activity>
+
+    <!-- Reboot -->
+    <activity
+        android:name="com.custom.apidemo.RebootSettings" >
+    </activity>
+
+    <!-- ShutDown -->
+    <activity
+        android:name="com.custom.apidemo.ShutDownSettings" >
+    </activity>
+
+    <!-- Sleep -->
+    <activity
+        android:name="com.custom.apidemo.SleepSettings" >
+    </activity>
+
+    <!-- Screenrecord -->
+    <activity
+        android:name="com.custom.apidemo.ScreenrecordSettings" >
+    </activity>
+
+    <!-- InstallPackage -->
+    <activity
+        android:name="com.custom.apidemo.InstallPackageSettings" >
+    </activity>
+
+    <!-- I2c -->
+    <activity
+        android:name="com.custom.apidemo.I2cSettings" >
+    </activity>
+
+    <!-- CanSettings -->
+    <activity
+        android:name="com.custom.apidemo.CanSettings" >
+    </activity>
+
+    <activity
+        android:name="com.custom.apidemo.UartSettings2" >
+    </activity>
+
+    <!-- StatusNaviBarSettings -->
+    <activity
+        android:name="com.custom.apidemo.StatusNaviBarSettings">
+    </activity>
+
+    <!-- displayPos -->
+    <activity
+        android:name="com.custom.apidemo.SetDisplayPos">
+    </activity>
+
+    <!-- CustomBroadcast -->
+    <activity
+        android:name="com.custom.apidemo.CustomBroadcast">
+    </activity>
+
+</application>
+</manifest>
